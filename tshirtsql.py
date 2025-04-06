@@ -1,11 +1,11 @@
 
-db_user="root"
-db_password="root"
+db_user="username"
+db_password="passowrd"
 
-#db_password="Az7608438"
-#db_host="database-1.claaeao4i4zj.eu-north-1.rds.amazonaws.com"
+#db_password="passowrd"
+#db_host="aws"
 db_host="localhost"
-db_port=3306
+db_port=1234
 db_name="atliq_tshirts"
 from langchain_community.utilities.sql_database import SQLDatabase
 db=SQLDatabase.from_uri(f"mysql+pymysql://{db_user}:{db_password}@{db_host}/{db_name}",)
