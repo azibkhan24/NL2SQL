@@ -19,7 +19,7 @@ from langchain.chains import create_sql_query_chain
 
 from langchain_google_genai import ChatGoogleGenerativeAI
 
-llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0, google_api_key="AIzaSyDSWJwYqHq0EQuTVBC2JNSgnBKZ3ylY5Bc")
+llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0, google_api_key="your_api_key")
 
 generate_query= create_sql_query_chain(llm, db)
 query = generate_query.invoke({"question": "list of all brands?"} )
